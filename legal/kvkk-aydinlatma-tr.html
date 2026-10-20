@@ -29,7 +29,7 @@ nav a{margin-right:12px;font-size:14px}
 <nav><a href="index.html">Language / Dil</a><a href="privacy-en.html">English policy</a></nav>
 
 <h1>Mola Kişisel Verilerin Korunması Aydınlatma Metni</h1>
-<p class="meta">Yürürlük tarihi: 18 Ekim 2026 · Son güncelleme: 18 Ekim 2026</p>
+<p class="meta">Yürürlük tarihi: 18 Ekim 2026 · Son güncelleme: 21 Ekim 2026</p>
 
 <p>Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") m.10 uyarınca, Mola oyunu (Android: <code>com.mkilic.mola</code>) kapsamında işlenen kişisel verilere ilişkin sizi bilgilendirmek amacıyla hazırlanmıştır.</p>
 
@@ -47,20 +47,35 @@ nav a{margin-right:12px;font-size:14px}
 <tr><td>Hata sayısı ve hata mesajının ilk satırı (en çok 120 karakter, yığın izi yok, oturum başına en çok 10)</td><td>Oyun</td><td>Hataların tespiti ve giderilmesi. Yalnızca izninizle, analitik olayı olarak gönderilir. Unity Cloud Diagnostics kapalıdır; çökme dökümü, yığın izi ve cihaz durumu görüntüsü toplanmaz.</td></tr>
 </table>
 
+<h2>2A. Google Play Games ve bulut kayıt (Android)</h2>
+<p><strong>Google Play Games.</strong> Android'de Mola, Google Play Games Hizmetleri'ni kullanır. Cihazınızda Play Games'e giriş yapmışsanız oyun, Google'dan Play Games oyuncu kimliğinizi ve görünen adınızı alır. Bir başarım kazandığınızda ya da oyun günü/mevsimi bittiğinde oyun, başarımı ve puanınızı (mevsim puanı, günlük ciro, toplam ciro) Google Play Games'e gönderir. Puan ve başarımlarınızı diğer oyuncuların görüp göremeyeceği, Google Play Games'teki profil görünürlüğü ayarınıza (Yalnızca arkadaşlar, Herkes, Yalnızca ben) bağlıdır. Bu veriler Google'ın <a href="https://policies.google.com/privacy">gizlilik politikası</a> ve Google Play Games koşulları kapsamında Google tarafından işlenir; Play Games SDK'sı kendi analitik ve tanılama verisini de Google'a gönderebilir. Play Games verilerinizi <a href="https://play.google.com/games/profile">Play Games profilinizden</a> ya da Google Hesabınızdan silebilirsiniz.</p>
+<p><strong>Bulut kayıt (isteğe bağlı).</strong> Play Games'e ilk girişten sonra oyun, ilerlemenizin Unity sunucularında saklanıp saklanmayacağını bir kez sorar. İki düğme eşittir, hiçbiri önceden seçili değildir; kartı seçim yapmadan kapatmak "Hayır" sayılır. "Evet" derseniz (açık rıza) oyun Unity Gaming Services'te (Unity Cloud Save) şunları saklar:</p>
+<table>
+<tr><th>Veri</th><th>Amaç</th></tr>
+<tr><td>Oyun ilerlemeniz (kayıt dosyası ve bir önceki bulut kaydının yedek kopyası)</td><td>Yeni cihazda ya da yeniden kurulumdan sonra ilerlemenin geri yüklenmesi</td></tr>
+<tr><td>Kaydın küçük bir özeti: oyun günü, karşılanan ihtiyaç sayısı, kayıt zamanı ve cihaz modeli</td><td>Hangi kaydın daha yeni olduğuna karar vermek, kaydın hangi cihazdan geldiğini göstermek</td></tr>
+<tr><td>Play Games oyuncu kimliğinize bağlı Unity Authentication oyuncu kimliği</td><td>Bulut kaydınızı tanımlamak. Yalnızca bulut kaydı açtığınızda oluşturulur; anonim hesap oluşturulmaz.</td></tr>
+</table>
+<p>Analitik ve bulut kaydı birlikte açarsanız analitik olayları bu oyuncu kimliğini de taşır. Bulut kayıt için "Hayır" derseniz bunların hiçbiri gönderilmez, kaydınız yalnız cihazınızda kalır.</p>
+
 <h2>3. İşleme amaçları</h2>
-<p>Yukarıdaki veriler yalnızca oyunun iyileştirilmesi, hataların giderilmesi ve kullanım deneyiminin analiz edilmesi amacıyla işlenir. Veriler reklam, profilleme veya satış amacıyla kullanılmaz. Bu sürümde reklam ve uygulama içi satın alma bulunmaz.</p>
+<p>Yukarıdaki veriler yalnızca oyunun iyileştirilmesi, hataların giderilmesi ve kullanım deneyiminin analiz edilmesi amacıyla işlenir. Veriler reklam, profilleme veya satış amacıyla kullanılmaz. Bu sürümde reklam ve uygulama içi satın alma bulunmaz. Bulut kayıt verileri yalnızca ilerlemenizin cihazlar arasında geri yüklenmesi amacıyla işlenir.</p>
 
 <h2>4. Hukuki sebep</h2>
-<p>Verilerin işlenmesi, ilk açılışta verdiğiniz açık rızaya dayanır (KVKK m.5/1).</p>
+<p>Verilerin işlenmesi, ilk açılışta verdiğiniz açık rızaya dayanır (KVKK m.5/1). Bulut kayıt verilerinin işlenmesi ve yurt dışına aktarılması, bulut kayıt kartında verdiğiniz ayrı ve açık rızaya dayanır (KVKK m.5/1, m.9). Analitik rızası ile bulut kayıt rızası birbirinden bağımsızdır.</p>
 
 <h2>5. Rızanın tercihi ve geri alınması</h2>
-<p>İlk açılışta "İzin ver" ve "Hayır" seçenekleri eşit düğmelerle sunulur; hiçbiri önceden seçili değildir. Kartı seçim yapmadan kapatırsanız "Hayır" olarak kabul edilir. Rızanızı istediğiniz zaman Ayarlar &gt; Veri bölümünden geri alabilirsiniz; geri alındığında veri gönderimi durur.</p>
+<p>İlk açılışta "İzin ver" ve "Hayır" seçenekleri eşit düğmelerle sunulur; hiçbiri önceden seçili değildir. Kartı seçim yapmadan kapatırsanız "Hayır" olarak kabul edilir. Rızanızı istediğiniz zaman Ayarlar &gt; Veri bölümünden geri alabilirsiniz; geri alındığında veri gönderimi durur. Bulut kayıt rızanızı Ayarlar &gt; Google Play Games &gt; Bulut kayıt (Kapalı) ile geri alabilirsiniz; bu, yüklemeyi durdurur, daha önce saklananı kendiliğinden silmez; silmek için "Bulut kaydını sil"i kullanın (bölüm 7).</p>
 
 <h2>6. Aktarım</h2>
 <p>Veriler, analitik hizmetini sağlayan Unity Technologies'in altyapısında işlenir. Unity Technologies bu verileri bizim adımıza, hizmet sağlayıcı (veri işleyen) olarak işler. Unity Analytics verileri GCP europe-west4 (Hollanda) bölgesinde saklanır; Data Access açıksa bir kopya us-central1 (ABD) bölgesine çoğaltılabilir. Saklama bölgesi kullanıcı tarafından seçilemez (<a href="https://support.unity.com/hc/en-us/articles/46140773039636-Where-is-my-data-stored-when-using-Unity-Gaming-Services">Unity destek makalesi</a>). Yurt dışına aktarım yalnızca açık rızanıza (izin kartındaki "İzin ver" düğmesi) dayanır (KVKK m.9); "Hayır" derseniz verileriniz aktarılmaz. Verileriniz üçüncü kişilere satılmaz.</p>
+<p>Bulut kayıt verileri, Unity Technologies tarafından Unity Gaming Services sunucularında hizmet sağlayıcı (veri işleyen) olarak işlenir; sunucular yurt dışında olabilir, bölge seçilemez. Aktarım yalnızca bulut kayıt kartındaki "Evet" ile verdiğiniz açık rızaya dayanır; "Hayır" derseniz kaydınız aktarılmaz. Google Play Games verileri Google tarafından işlenir; profil görünürlüğünüze göre diğer oyuncular puan ve başarımlarınızı görebilir.</p>
 
-<h2>7. Saklama süresi</h2>
-<p>Unity, kişisel veriyi (analitik olayları dahil) varsayılan olarak 13 ay saklar; ham olay verisi bu süre sonunda otomatik silinir. Dashboard metrikleri ve kullanıcı profilleri, silme talebi gelene ya da geliştirici kaldırana kadar tutulur (kaynaklar: <a href="https://docs.unity.com/ugs/manual/analytics/manual/faq">Unity Analytics SSS</a>; <a href="https://docs.unity.com/analytics/privacy-and-consent/privacy-overview">Unity gizlilik genel bakışı</a>). Oyun ilerlemeniz cihazınızda tutulur ve uygulamayı kaldırmak yerel kaydı siler; Android cihaz yedeğini kullanıyorsanız oyun ilerlemeniz bu yedeğe dahil olabilir; analitik verisi yedeğe girmez. Ayarlar &gt; Veri'yi kapatmak veri toplamayı durdurur ve ham veri 13 ayda otomatik silinir. Daha önceki verilerin silinmesi için m_kilic@outlook.com.tr adresine "Veri silme" konulu e-posta yazabilirsiniz. Oyun kurulum kimliğinizi göstermediği için cihaz modelinizi ve yaklaşık kurulum tarihinizi isteyebiliriz; verileri size eşleştiremezsek bunu size bildiririz.</p>
+<h2 id="silme">7. Saklama süresi ve veri silme</h2>
+<p>Bu bölüm, <strong>Mola: Highway Rest Stop</strong> (Mustafa Kılıç, Android paketi <code>com.mkilic.mola</code>) oyunundaki verilerinizin, bulut kaydınız ve Play Games hesabınıza bağlı oyuncu kimliğiniz dahil, nasıl silineceğini anlatır. Silmek için oyunun kurulu olması gerekmez.</p>
+<p><strong>Bulut kayıt:</strong> Bulut kaydınız (kayıt, özeti ve bağlı oyuncu kimliği), siz silene ya da e-postayla silinmesini isteyene kadar saklanır. Oyunda Ayarlar &gt; Google Play Games &gt; Bulut kaydını sil'e dokunup onaylarsanız bulut kaydınız ve Play Games hesabınıza bağlı oyuncu kimliğiniz Unity sunucularından kalıcı olarak silinir; cihazdaki kaydınız silinmez. Ayrıca m_kilic@outlook.com.tr adresine "Bulut kaydı silme" konulu e-posta gönderebilirsiniz (oyun kurulu olmasa da); eşleştirme için Ayarlar &gt; Google Play Games'te görünen Oyuncu ID'nizi ve Play Games görünen adınızı yazın.</p>
+<p><strong>Google Play Games:</strong> Başarım, puan ve öteki Play Games verilerini <a href="https://play.google.com/games/profile">Play Games profilinizden</a> ya da Google Hesabınızdan silebilirsiniz; Google'da tutulan verileri biz silemeyiz.</p>
+<p><strong>Analitik:</strong> Unity, kişisel veriyi (analitik olayları dahil) varsayılan olarak 13 ay saklar; ham olay verisi bu süre sonunda otomatik silinir. Dashboard metrikleri ve kullanıcı profilleri, silme talebi gelene ya da geliştirici kaldırana kadar tutulur (kaynaklar: <a href="https://docs.unity.com/ugs/manual/analytics/manual/faq">Unity Analytics SSS</a>; <a href="https://docs.unity.com/analytics/privacy-and-consent/privacy-overview">Unity gizlilik genel bakışı</a>). Oyun ilerlemeniz cihazınızda tutulur ve uygulamayı kaldırmak yerel kaydı siler; Android cihaz yedeğini kullanıyorsanız oyun ilerlemeniz bu yedeğe dahil olabilir; analitik verisi yedeğe girmez. Ayarlar &gt; Veri'yi kapatmak veri toplamayı durdurur ve ham veri 13 ayda otomatik silinir. Daha önceki verilerin silinmesi için m_kilic@outlook.com.tr adresine "Veri silme" konulu e-posta yazabilirsiniz. Oyun kurulum kimliğinizi göstermediği için cihaz modelinizi ve yaklaşık kurulum tarihinizi isteyebiliriz; verileri size eşleştiremezsek bunu size bildiririz.</p>
 
 <h2>8. KVKK m.11 kapsamındaki haklarınız</h2>
 <ul>
