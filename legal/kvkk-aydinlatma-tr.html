@@ -29,7 +29,7 @@ nav a{margin-right:12px;font-size:14px}
 <nav><a href="index.html">Language / Dil</a><a href="privacy-en.html">English policy</a></nav>
 
 <h1>Mola Kişisel Verilerin Korunması Aydınlatma Metni</h1>
-<p class="meta">Yürürlük tarihi: 18 Ekim 2026 · Son güncelleme: 21 Ekim 2026</p>
+<p class="meta">Yürürlük tarihi: 18 Ekim 2026 · Son güncelleme: 22 Ekim 2026</p>
 
 <p>Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") m.10 uyarınca, Mola oyunu (Android: <code>com.mkilic.mola</code>) kapsamında işlenen kişisel verilere ilişkin sizi bilgilendirmek amacıyla hazırlanmıştır.</p>
 
@@ -42,7 +42,7 @@ nav a{margin-right:12px;font-size:14px}
 <tr><th>Veri</th><th>Kaynak</th><th>Amaç</th></tr>
 <tr><td>Kurulum kimliği (Unity tarafından atanan rastgele tanımlayıcı)</td><td>Unity SDK</td><td>Kurulumların sayılması, oyun ilerlemesinin analizi</td></tr>
 <tr><td>Cihaz modeli, işletim sistemi sürümü, oyun sürümü, platform ve sistem dili (Unity SDK'sı kendiliğinden ekler), ayrıca oyunda seçilen dil</td><td>Cihaz / Unity SDK</td><td>Uyumluluk, hata ayıklama, dil kararları</td></tr>
-<tr><td>Oyun oturumu ve oyun günü olayları (oturum başlangıcı: oyun günü ve yılı, önceki oturumun gün ortasında kapanıp kapanmadığı; gün sonu oyun değerleri: gelir, net, memnuniyet, oynama süresi, oyun hızı; tesis açılışı; görev tamamlama: görev kimliği; başarım kazanma: başarım kimliği; günlük ödül alma: gün, seri, miktar; çevrimdışı dönüş: uzak kalınan dakika, kazanılan nakit)</td><td>Oyun</td><td>Oyun dengesinin ve deneyimin iyileştirilmesi</td></tr>
+<tr><td>Oyun oturumu ve oyun günü olayları (oturum başlangıcı: oyun günü ve yılı, önceki oturumun gün ortasında kapanıp kapanmadığı; gün sonu oyun değerleri: gelir, net, memnuniyet, oynama süresi, oyun hızı; tesis açılışı; görev tamamlama: görev kimliği; başarım kazanma: başarım kimliği; günlük ödül alma: gün, seri, miktar; çevrimdışı dönüş: uzak kalınan dakika, kazanılan nakit; 0.3.0 sürümünden itibaren ödüllü reklam: teklif, gösterim, ödül, hata: yer, oyun günü, ödül miktarı, hata kodu)</td><td>Oyun</td><td>Oyun dengesinin ve deneyimin iyileştirilmesi</td></tr>
 <tr><td>Yaklaşık ülke bilgisi (IP adresinden Unity tarafından türetilir)</td><td>Unity</td><td>Bölgesel kullanım ve performans analizi. Unity, yaklaşık ülkeyi tahmin etmek için IP adresinizi işleyebilir; IP adresiniz raporlarımızda bize iletilmez.</td></tr>
 <tr><td>Hata sayısı ve hata mesajının ilk satırı (en çok 120 karakter, yığın izi yok, oturum başına en çok 10)</td><td>Oyun</td><td>Hataların tespiti ve giderilmesi. Yalnızca izninizle, analitik olayı olarak gönderilir. Unity Cloud Diagnostics kapalıdır; çökme dökümü, yığın izi ve cihaz durumu görüntüsü toplanmaz.</td></tr>
 </table>
@@ -58,24 +58,38 @@ nav a{margin-right:12px;font-size:14px}
 </table>
 <p>Analitik ve bulut kaydı birlikte açarsanız analitik olayları bu oyuncu kimliğini de taşır. Bulut kayıt için "Hayır" derseniz bunların hiçbiri gönderilmez, kaydınız yalnız cihazınızda kalır.</p>
 
+<h2>2B. Reklamlar (Google AdMob, 0.3.0 sürümünden itibaren)</h2>
+<p>Mola, ödüllü reklamları Google Mobile Ads SDK (AdMob) ve Google'ın User Messaging Platform'u ile gösterir. Reklam yalnızca "Reklam izle" düğmesine dokunduğunuzda gösterilir. Reklam istendiğinde ya da gösterildiğinde Google'ın SDK'sı, reklamlar kişiselleştirilsin ya da kişiselleştirilmesin, aşağıdakileri Google'a gönderir:</p>
+<table>
+<tr><th>Veri</th><th>Kaynak</th><th>Amaç</th></tr>
+<tr><td>Reklam kimlikleri: Android'de reklam kimliği ve uygulama grubu kimliği (app set ID); iOS'ta reklam kimliği (IDFA), yalnızca iOS izleme sorusunda izin verirseniz</td><td>Cihaz / Google SDK</td><td>Reklamların gösterilmesi ve ölçülmesi, dolandırıcılığın önlenmesi; izin verirseniz reklamların kişiselleştirilmesi</td></tr>
+<tr><td>IP adresi (Google genel konumunuzu tahmin etmek için kullanır)</td><td>Google SDK</td><td>Bölgenize uygun reklam gösterilmesi, dolandırıcılığın önlenmesi</td></tr>
+<tr><td>Reklam etkileşimleri: gösterilen reklamlar, dokunmalar, video izlemeleri</td><td>Google SDK</td><td>Reklamların ölçülmesi, geçersiz trafiğin önlenmesi</td></tr>
+<tr><td>Uygulama ve reklam SDK'sına ait tanılama verileri (örneğin uygulamanın açılış süresi)</td><td>Google SDK</td><td>Reklam SDK'sının çalışır tutulması</td></tr>
+</table>
+<p><strong>Kişiselleştirilmiş reklam.</strong> Veri kartından sonra oyun, kişiselleştirilmiş reklamı "İzin ver" ve "Hayır" diye iki eşit düğmeyle sorar; hiçbiri önceden seçili değildir, kartı seçim yapmadan kapatmak "Hayır" sayılır. "İzin ver" derseniz Google yukarıdaki verileri ilgi alanlarınıza göre reklam göstermek için kullanabilir. "Hayır" derseniz her reklam isteğinde Google'dan kişiselleştirilmemiş reklam istenir ve iOS'ta izleme sorusu gösterilmez. Seçiminizi istediğiniz zaman Ayarlar &gt; Genel &gt; Kişiselleştirilmiş reklam'dan değiştirebilirsiniz. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de Google'ın kendi izin formu da gösterilir; Ayarlar &gt; Genel'deki "Reklam gizlilik seçenekleri" ile oradaki seçiminizi değiştirebilirsiniz.</p>
+<p>Google bu verileri <a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google'ın, hizmetlerini kullanan sitelerden veya uygulamalardan gelen bilgileri nasıl kullandığı</a> sayfasında ve <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>'nda anlatıldığı şekilde kullanır. Oyunun kendisi reklam kimliğinizi almaz.</p>
+
 <h2>3. İşleme amaçları</h2>
-<p>Yukarıdaki veriler yalnızca oyunun iyileştirilmesi, hataların giderilmesi ve kullanım deneyiminin analiz edilmesi amacıyla işlenir. Veriler reklam, profilleme veya satış amacıyla kullanılmaz. Bu sürümde reklam ve uygulama içi satın alma bulunmaz. Bulut kayıt verileri yalnızca ilerlemenizin cihazlar arasında geri yüklenmesi amacıyla işlenir.</p>
+<p>Yukarıdaki veriler yalnızca oyunun iyileştirilmesi, hataların giderilmesi ve kullanım deneyiminin analiz edilmesi amacıyla işlenir. Analitik ve bulut kayıt verileri reklam, profilleme veya satış amacıyla kullanılmaz. 0.3.0 sürümünden itibaren oyunda isteğe bağlı ödüllü reklamlar vardır; reklam verileri (bölüm 2B) reklamların gösterilmesi, ölçülmesi ve geçersiz trafiğin önlenmesi, izin verirseniz kişiselleştirilmesi amacıyla Google tarafından işlenir. Uygulama içi satın alma bulunmaz. Bulut kayıt verileri yalnızca ilerlemenizin cihazlar arasında geri yüklenmesi amacıyla işlenir.</p>
 
 <h2>4. Hukuki sebep</h2>
-<p>Verilerin işlenmesi, ilk açılışta verdiğiniz açık rızaya dayanır (KVKK m.5/1). Bulut kayıt verilerinin işlenmesi ve yurt dışına aktarılması, bulut kayıt kartında verdiğiniz ayrı ve açık rızaya dayanır (KVKK m.5/1, m.9). Analitik rızası ile bulut kayıt rızası birbirinden bağımsızdır.</p>
+<p>Verilerin işlenmesi, ilk açılışta verdiğiniz açık rızaya dayanır (KVKK m.5/1). Bulut kayıt verilerinin işlenmesi ve yurt dışına aktarılması, bulut kayıt kartında verdiğiniz ayrı ve açık rızaya dayanır (KVKK m.5/1, m.9). Analitik rızası ile bulut kayıt rızası birbirinden bağımsızdır. Kişiselleştirilmiş reklam için verilerin işlenmesi ve yurt dışına aktarılması, reklam kartında verdiğiniz ayrı açık rızaya dayanır (KVKK m.5/1, m.9). Kişiselleştirilmemiş reklamın gösterilmesi için gereken işleme ve yurt dışı aktarımın hukuki sebebi avukat incelemesindedir.</p>
 
 <h2>5. Rızanın tercihi ve geri alınması</h2>
-<p>İlk açılışta "İzin ver" ve "Hayır" seçenekleri eşit düğmelerle sunulur; hiçbiri önceden seçili değildir. Kartı seçim yapmadan kapatırsanız "Hayır" olarak kabul edilir. Rızanızı istediğiniz zaman Ayarlar &gt; Veri bölümünden geri alabilirsiniz; geri alındığında veri gönderimi durur. Bulut kayıt rızanızı Ayarlar &gt; Google Play Games &gt; Bulut kayıt (Kapalı) ile geri alabilirsiniz; bu, yüklemeyi durdurur, daha önce saklananı kendiliğinden silmez; silmek için "Bulut kaydını sil"i kullanın (bölüm 7).</p>
+<p>İlk açılışta "İzin ver" ve "Hayır" seçenekleri eşit düğmelerle sunulur; hiçbiri önceden seçili değildir. Kartı seçim yapmadan kapatırsanız "Hayır" olarak kabul edilir. Rızanızı istediğiniz zaman Ayarlar &gt; Veri bölümünden geri alabilirsiniz; geri alındığında veri gönderimi durur. Bulut kayıt rızanızı Ayarlar &gt; Google Play Games &gt; Bulut kayıt (Kapalı) ile geri alabilirsiniz; bu, yüklemeyi durdurur, daha önce saklananı kendiliğinden silmez; silmek için "Bulut kaydını sil"i kullanın (bölüm 7). Kişiselleştirilmiş reklam rızanızı Ayarlar &gt; Genel &gt; Kişiselleştirilmiş reklam ile geri alabilirsiniz; bundan sonraki reklamlar kişiselleştirilmeden istenir.</p>
 
 <h2>6. Aktarım</h2>
 <p>Veriler, analitik hizmetini sağlayan Unity Technologies'in altyapısında işlenir. Unity Technologies bu verileri bizim adımıza, hizmet sağlayıcı (veri işleyen) olarak işler. Unity Analytics verileri GCP europe-west4 (Hollanda) bölgesinde saklanır; Data Access açıksa bir kopya us-central1 (ABD) bölgesine çoğaltılabilir. Saklama bölgesi kullanıcı tarafından seçilemez (<a href="https://support.unity.com/hc/en-us/articles/46140773039636-Where-is-my-data-stored-when-using-Unity-Gaming-Services">Unity destek makalesi</a>). Yurt dışına aktarım yalnızca açık rızanıza (izin kartındaki "İzin ver" düğmesi) dayanır (KVKK m.9); "Hayır" derseniz verileriniz aktarılmaz. Verileriniz üçüncü kişilere satılmaz.</p>
 <p>Bulut kayıt verileri, Unity Technologies tarafından Unity Gaming Services sunucularında hizmet sağlayıcı (veri işleyen) olarak işlenir; sunucular yurt dışında olabilir, bölge seçilemez. Aktarım yalnızca bulut kayıt kartındaki "Evet" ile verdiğiniz açık rızaya dayanır; "Hayır" derseniz kaydınız aktarılmaz. Google Play Games verileri Google tarafından işlenir; profil görünürlüğünüze göre diğer oyuncular puan ve başarımlarınızı görebilir.</p>
+<p>Reklam verileri (bölüm 2B), Google'ın SDK'sı aracılığıyla doğrudan Google'a gider ve Google tarafından, ABD dahil yurt dışında olabilecek sunucularda, kendi politikalarına göre işlenir.</p>
 
 <h2 id="silme">7. Saklama süresi ve veri silme</h2>
 <p>Bu bölüm, <strong>Mola: Highway Rest Stop</strong> (Mustafa Kılıç, Android paketi <code>com.mkilic.mola</code>) oyunundaki verilerinizin, bulut kaydınız ve Play Games hesabınıza bağlı oyuncu kimliğiniz dahil, nasıl silineceğini anlatır. Silmek için oyunun kurulu olması gerekmez.</p>
 <p><strong>Bulut kayıt:</strong> Bulut kaydınız (kayıt, özeti ve bağlı oyuncu kimliği), siz silene ya da e-postayla silinmesini isteyene kadar saklanır. Oyunda Ayarlar &gt; Google Play Games &gt; Bulut kaydını sil'e dokunup onaylarsanız bulut kaydınız ve Play Games hesabınıza bağlı oyuncu kimliğiniz Unity sunucularından kalıcı olarak silinir; cihazdaki kaydınız silinmez. Ayrıca m_kilic@outlook.com.tr adresine "Bulut kaydı silme" konulu e-posta gönderebilirsiniz (oyun kurulu olmasa da); eşleştirme için Ayarlar &gt; Google Play Games'te görünen Oyuncu ID'nizi ve Play Games görünen adınızı yazın.</p>
 <p><strong>Google Play Games:</strong> Başarım, puan ve öteki Play Games verilerini <a href="https://play.google.com/games/profile">Play Games profilinizden</a> ya da Google Hesabınızdan silebilirsiniz; Google'da tutulan verileri biz silemeyiz.</p>
 <p><strong>Analitik:</strong> Unity, kişisel veriyi (analitik olayları dahil) varsayılan olarak 13 ay saklar; ham olay verisi bu süre sonunda otomatik silinir. Dashboard metrikleri ve kullanıcı profilleri, silme talebi gelene ya da geliştirici kaldırana kadar tutulur (kaynaklar: <a href="https://docs.unity.com/ugs/manual/analytics/manual/faq">Unity Analytics SSS</a>; <a href="https://docs.unity.com/analytics/privacy-and-consent/privacy-overview">Unity gizlilik genel bakışı</a>). Oyun ilerlemeniz cihazınızda tutulur ve uygulamayı kaldırmak yerel kaydı siler; Android cihaz yedeğini kullanıyorsanız oyun ilerlemeniz bu yedeğe dahil olabilir; analitik verisi yedeğe girmez. Ayarlar &gt; Veri'yi kapatmak veri toplamayı durdurur ve ham veri 13 ayda otomatik silinir. Daha önceki verilerin silinmesi için m_kilic@outlook.com.tr adresine "Veri silme" konulu e-posta yazabilirsiniz. Oyun kurulum kimliğinizi göstermediği için cihaz modelinizi ve yaklaşık kurulum tarihinizi isteyebiliriz; verileri size eşleştiremezsek bunu size bildiririz.</p>
+<p><strong>Reklam:</strong> Reklam verilerini biz tutmayız; Google doğrudan alır ve <a href="https://policies.google.com/technologies/retention?hl=tr">kendi saklama politikasına</a> göre saklar. Reklam kimliğinizi cihaz ayarlarından sıfırlayabilir ya da silebilirsiniz (Android: Ayarlar &gt; Google &gt; Reklamlar; iOS: Ayarlar &gt; Gizlilik ve Güvenlik &gt; İzlenme); Google'ın verilerinizi nasıl kullandığını <a href="https://myadcenter.google.com">Reklam Merkezim</a>'den yönetebilirsiniz.</p>
 
 <h2>8. KVKK m.11 kapsamındaki haklarınız</h2>
 <ul>
@@ -94,7 +108,7 @@ nav a{margin-right:12px;font-size:14px}
 <p>Haklarınızı kullanmak için m_kilic@outlook.com.tr adresine "KVKK başvurusu" konulu e-posta gönderebilirsiniz. Başvurunuz en geç 30 gün içinde ücretsiz olarak sonuçlandırılır; işlemin ayrıca bir maliyeti gerektirmesi hâlinde Kurul tarafından belirlenen ücret alınabilir. Başvurunuzun reddedilmesi, yetersiz bulunması veya süresinde yanıt verilmemesi hâllerinde Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsiniz (KVKK m.13-14).</p>
 
 <h2>10. Çocuklar</h2>
-<p>Mola 13 yaş ve altındaki çocuklara yönelik değildir; bu yaştaki çocuklardan bilerek veri toplanmaz.</p>
+<p>Mola 13 yaş ve altındaki çocuklara yönelik değildir; bu yaştaki çocuklardan bilerek veri toplanmaz. Reklamlar çocuklara yönelik değildir.</p>
 
 <h2>11. Değişiklikler</h2>
 <p>Bu metin güncellenebilir; güncel sürüm bu sayfada yayımlanır ve önemli değişikliklerde oyun içinde bildirilir.</p>

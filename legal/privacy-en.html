@@ -29,7 +29,7 @@ nav a{margin-right:12px;font-size:14px}
 <nav><a href="index.html">Language / Dil</a><a href="kvkk-aydinlatma-tr.html">Türkçe (KVKK)</a></nav>
 
 <h1>Mola: Privacy Policy</h1>
-<p class="meta">Effective date: October 18, 2026 · Last updated: October 21, 2026</p>
+<p class="meta">Effective date: October 18, 2026 · Last updated: October 22, 2026</p>
 
 <p>This policy explains what information the Mola game ("Mola", "the game") collects, why, and what choices you have. Mola is developed by Mustafa Kılıç ("we"). Contact: m_kilic@outlook.com.tr.</p>
 
@@ -39,7 +39,8 @@ nav a{margin-right:12px;font-size:14px}
 <li>Mola uses Unity Gaming Services (analytics and, only if you turn it on, cloud save). Analytics events are sent only if you choose "Allow" on the first launch screen. You can change this at any time in Settings &gt; Data.</li>
 <li>Unity's crash diagnostics are turned off: no crash dumps are collected. With your permission, the game sends only an error count and the first line of an error message as an analytics event.</li>
 <li>If you choose "No", no analytics or error data is sent from the game.</li>
-<li>This version has no ads and no in-app purchases. The game has no account of its own.</li>
+<li>From version 0.3.0, the game shows optional rewarded ads from Google AdMob: you choose to watch an ad for an in-game bonus (double the day's revenue, or double the night kasa). There are no ads you have to watch and no in-app purchases. The game has no account of its own.</li>
+<li>Personalised ads are asked separately, on a second card with two equal buttons. If you say "No", ads are not personalised. Section 2B explains what Google receives either way.</li>
 <li>On Android, the game can use Google Play Games for achievements and leaderboards. Google provides your Play Games player ID and display name to the game; Google's own terms and privacy policy apply to that.</li>
 <li>Cloud save is optional. It is asked once, with an explicit choice, and it is off if you say "No". If you say "Yes", your progress is stored on Unity Gaming Services servers, linked to your Play Games account, so you can continue on another device. You can delete it at any time in Settings &gt; Google Play Games &gt; Delete cloud save.</li>
 </ul>
@@ -49,7 +50,7 @@ nav a{margin-right:12px;font-size:14px}
 <tr><th>Information</th><th>Why</th></tr>
 <tr><td>Installation ID (a random identifier assigned by Unity)</td><td>Counting installs and understanding how progress develops over time</td></tr>
 <tr><td>Device model, operating system version, game version, platform, and system language (added automatically by the Unity SDK), plus the language chosen in the game</td><td>Compatibility, bug fixing, and language decisions</td></tr>
-<tr><td>Game events: session start (game day and year, whether the previous session ended in the middle of a game day), end-of-day game values (income, net, satisfaction, play time, game speed), facility opened, goal completed (goal ID), achievement unlocked (achievement ID), daily reward claimed (day, streak, amount), return after offline time (minutes away, cash earned)</td><td>Improving game balance and the first-day experience</td></tr>
+<tr><td>Game events: session start (game day and year, whether the previous session ended in the middle of a game day), end-of-day game values (income, net, satisfaction, play time, game speed), facility opened, goal completed (goal ID), achievement unlocked (achievement ID), daily reward claimed (day, streak, amount), return after offline time (minutes away, cash earned), rewarded ads from version 0.3.0 (offered, shown, rewarded, failed: placement, game day, bonus amount, error code)</td><td>Improving game balance and the first-day experience</td></tr>
 <tr><td>Approximate country, derived by Unity from the connection's IP address. Unity may process your IP address to estimate your approximate country; we do not receive your IP address in our reports.</td><td>Regional usage and performance analysis</td></tr>
 <tr><td>Error count and the first line of an error message (at most 120 characters, no stack trace, at most 10 per session)</td><td>Finding and fixing bugs. Sent only with your permission, as an analytics event. Unity Cloud Diagnostics is turned off, so no crash dumps, stack traces, or device-state snapshots are collected.</td></tr>
 </table>
@@ -66,12 +67,24 @@ nav a{margin-right:12px;font-size:14px}
 <p>If you turn on both analytics and cloud save, the analytics events also carry this player ID. If you choose "No" for cloud save, none of this is sent and your save stays on your device.</p>
 <p>Legal basis: your explicit consent, including for transferring the data abroad (see section 5). You can withdraw consent at any time in Settings &gt; Google Play Games &gt; Cloud save (Off). Turning it off stops uploads; it does not by itself delete what is already stored, use "Delete cloud save" for that (section 8).</p>
 
+<h2>2B. Ads (Google AdMob, from version 0.3.0)</h2>
+<p>Mola shows rewarded ads through the Google Mobile Ads SDK (AdMob) and Google's User Messaging Platform. An ad is shown only when you tap a "Watch ad" button. When an ad is requested or shown, Google's SDK sends the following to Google, whether or not ads are personalised:</p>
+<table>
+<tr><th>Information</th><th>Why</th></tr>
+<tr><td>Advertising identifiers: on Android the advertising ID and the app set ID; on iOS the advertising identifier (IDFA) only if you allow tracking in the iOS prompt</td><td>Serving and measuring ads and preventing fraud; with your consent, also personalising ads</td></tr>
+<tr><td>IP address (Google uses it to estimate your general location)</td><td>Serving ads suited to your region, preventing fraud</td></tr>
+<tr><td>Ad interactions: ads shown, taps, video views</td><td>Measuring ads, preventing invalid traffic</td></tr>
+<tr><td>Diagnostic data about the app and the ads SDK (for example app launch time)</td><td>Keeping the ads SDK working</td></tr>
+</table>
+<p><strong>Personalised ads.</strong> After the data card, the game asks about personalised ads with two equal buttons, "Allow" and "No"; neither is selected by default and closing the card counts as "No". With "Allow", Google may use the information above to show ads based on your interests. With "No", every ad request asks Google for non-personalised ads, and on iOS the game does not show the tracking prompt. You can change this at any time in Settings &gt; General &gt; Personalised ads. In the European Economic Area, the United Kingdom and Switzerland, Google's own consent form is also shown, and Settings &gt; General shows "Ad privacy options" to change your choice there.</p>
+<p>Google uses this information as described in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. The game itself does not receive your advertising identifier.</p>
+
 <h2>3. Information we do not collect</h2>
 <ul>
 <li>No name, email address, phone number, contacts, photos, or precise location. The game does not receive your Google account email address.</li>
 <li>No microphone or camera access.</li>
 <li>No crash dumps, stack traces, or memory snapshots.</li>
-<li>No advertising identifiers and no advertising profiles. This version has no ads.</li>
+<li>We do not build advertising profiles. The advertising identifier is read only by Google's ads SDK (section 2B); the game does not receive it.</li>
 </ul>
 
 <h2>4. Your choice</h2>
@@ -80,12 +93,14 @@ nav a{margin-right:12px;font-size:14px}
 <h2>5. Where data is processed</h2>
 <p>Data is processed by Unity Technologies on its servers. Unity Analytics data is stored at rest in Google Cloud europe-west4 (Netherlands); if Data Access is enabled, a copy may be replicated to us-central1 (United States). Customers cannot choose the storage region (<a href="https://support.unity.com/hc/en-us/articles/46140773039636-Where-is-my-data-stored-when-using-Unity-Gaming-Services">Unity support article</a>). This means data may leave your country. Such a transfer takes place only on the basis of your explicit consent (the "Allow" button on the first launch screen). If you choose "No", your data is not transferred.</p>
 <p>Cloud save data is processed by Unity Technologies on Unity Gaming Services servers, which may be outside your country; you cannot choose the storage region. This transfer takes place only on the basis of your explicit consent (the "Yes" button on the cloud save card). If you choose "No", your save is not transferred. Google Play Games data is processed by Google.</p>
+<p>Ad data (section 2B) is processed by Google on its servers, which may be outside your country, including the United States. For personalised ads, the transfer is based on your explicit consent (the "Allow" button on the ads card). Non-personalised ads also need the information in section 2B to be sent to Google; the legal basis and safeguards for that transfer are under legal review.</p>
 
 <h2>6. Sharing</h2>
-<p>We do not sell your information and do not share it for advertising. Unity Technologies processes this data on our behalf as a service provider (data processor) under its terms. Unity Technologies processes cloud save data on our behalf as a service provider (data processor). Scores and achievements you send to Google Play Games are handled by Google and, depending on your Play Games profile visibility, may be visible to other players.</p>
+<p>We do not sell your information. For ads, Google receives the information in section 2B directly through its SDK and uses it under its own policies; with your consent this includes ad personalisation. Unity Technologies processes this data on our behalf as a service provider (data processor) under its terms. Unity Technologies processes cloud save data on our behalf as a service provider (data processor). Scores and achievements you send to Google Play Games are handled by Google and, depending on your Play Games profile visibility, may be visible to other players.</p>
 
 <h2>7. How long data is kept</h2>
 <p>By default, Unity keeps personal data, including analytics events, for 13 months; raw event data is deleted automatically after that period. Dashboard metrics and user profiles are kept until deletion is requested or the developer removes them (sources: <a href="https://docs.unity.com/ugs/manual/analytics/manual/faq">Unity Analytics FAQ</a>; <a href="https://docs.unity.com/analytics/privacy-and-consent/privacy-overview">Unity privacy overview</a>). Your game progress stays on your device until you delete the app, and may be included in Android's device backup if you use it. Analytics data is not included in backups.</p>
+<p>We do not hold ad data; Google keeps it according to its own policies (<a href="https://policies.google.com/technologies/retention">How Google retains data</a>).</p>
 <p>Cloud save data (your save, its summary, and the linked player ID) is kept until you delete it with Settings &gt; Google Play Games &gt; Delete cloud save, or ask us by email to delete it. Your save on the device stays until you delete the app.</p>
 
 <h2 id="delete">8. Deleting your data and your cloud save</h2>
@@ -93,9 +108,10 @@ nav a{margin-right:12px;font-size:14px}
 <p><strong>Cloud save:</strong> In the game, go to Settings &gt; Google Play Games &gt; Delete cloud save and confirm. This permanently deletes your cloud save and the player ID linked to your Play Games account from Unity's servers. The save on your device is not deleted. You can also email m_kilic@outlook.com.tr with the subject "Delete cloud save". Include the Player ID shown in Settings &gt; Google Play Games, and your Play Games display name, so we can match the request. You do not need the game installed to ask. We delete the data from Unity's servers and reply within a reasonable time.</p>
 <p><strong>Google Play Games:</strong> to delete achievements, scores and other Play Games data, use your <a href="https://play.google.com/games/profile">Play Games profile</a> or your Google Account; we cannot delete data held by Google.</p>
 <p><strong>Analytics:</strong> Turning off Data in Settings &gt; Data stops collection, and raw data is deleted automatically after 13 months. To have earlier data deleted, email m_kilic@outlook.com.tr with the subject "Data deletion". The game does not display your installation ID, so we may ask for your device model and the approximate date you installed the game; if we cannot match the data to you, we will tell you. We will reply within a reasonable time. Requests for data held by Unity can also be made through Unity's own process.</p>
+<p><strong>Ads:</strong> we do not hold your ad data; Google receives it directly. You can reset or delete your advertising ID in your device settings (Android: Settings &gt; Google &gt; Ads; iOS: Settings &gt; Privacy &amp; Security &gt; Tracking) and manage how Google uses your data in <a href="https://myadcenter.google.com">My Ad Center</a>.</p>
 
 <h2>9. Children</h2>
-<p>Mola is not directed at children under 13, and we do not knowingly collect information from children under 13. If you believe a child under 13 has sent data through the game, email us and we will delete it.</p>
+<p>Mola is not directed at children under 13, and we do not knowingly collect information from children under 13. The ads are not directed at children. If you believe a child under 13 has sent data through the game, email us and we will delete it.</p>
 
 <h2>10. Security</h2>
 <p>Data is sent over encrypted connections (HTTPS).</p>
